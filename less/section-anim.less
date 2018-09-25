@@ -1,0 +1,252 @@
+.skills__col{
+	transition: transform .6s ease-in-out, opacity 1s ease-in-out;
+	transform: translateY(50px);
+	opacity: 0;
+	transition-delay: 0;
+	
+}
+.about-me__icon-col,
+.contact-socials{
+	transition: transform .6s ease-in-out, opacity 1s ease-in-out;
+	transform: translateY(100px);
+	opacity: 0;
+	transition-delay: 0;
+}
+
+.fp-viewing-home{
+	.hero-col{
+		transform: translateY(0) scale(1);
+		opacity: 1;
+	}
+	#hero{
+		&::after{
+			transform: translateX(0);
+		}
+	}
+	.scroll-down{
+		bottom: 0;
+		@media @medium{
+			bottom: 50px;
+		}
+	}
+}
+
+.fp-viewing-about-me {
+	#about{
+			&::after{
+				transform: translateX(0);
+			}
+			.container{
+				opacity: 1;
+				transform: translateY(0)!important;
+			}
+			.img-wrapper{
+				-webkit-filter: grayscale(.65) !important;
+			        filter: grayscale(.65) !important;
+				transition-delay: 1.2s;
+			}
+		}
+	#zaleta-1,
+	#zaleta-2,
+	#zaleta-3{
+		transform: translateY(0);
+		opacity: 1;
+	}
+	#zaleta-1{
+		transition-delay: .3s;
+	}
+	#zaleta-2{
+		transition-delay: .6s;
+	}
+	#zaleta-3{
+		transition-delay: .9s;
+	}
+
+}
+
+
+
+.fp-viewing-in-touch{
+	#social-1,
+	#social-2,
+	#social-3{
+		transform: translateY(0);
+		opacity: 1;
+	}
+	#social-1{
+		transition-delay: .3s;
+	}
+	#social-2{
+		transition-delay: .6s;
+	}
+	#social-3{
+		transition-delay: .9s;
+	}
+}
+
+.fp-viewing-my-skills{
+	#skills{
+	
+		&::after{
+			transform: translateX(0);
+		}
+	}
+	
+	.skills__col{
+		transform: translateY(0);
+		opacity: 1;
+		
+	}
+	.skills__col:nth-child(2),
+	.skills__col:nth-child(3){
+		transition-delay: .3s;
+
+
+	}
+	.skills__col:nth-child(4),
+	.skills__col:nth-child(5){
+		transition-delay: .6s;
+
+	}
+	.skills__col:nth-child(6),
+	.skills__col:nth-child(7){
+		transition-delay: .9s;
+
+	}
+	.skills__col:nth-child(8),
+	.skills__col:nth-child(9){
+		transition-delay: 1.2s;
+
+	}
+	.skills__col:nth-child(10){
+		transition-delay: 1.4s;
+	}
+	@media @small{
+		.skills__col:nth-child(2),
+		.skills__col:nth-child(3),
+		.skills__col:nth-child(4){
+			transition-delay: .3s;
+
+		}
+		.skills__col:nth-child(5),
+		.skills__col:nth-child(6),
+		.skills__col:nth-child(7){
+
+			transition-delay: .6s;
+		}
+		.skills__col:nth-child(8),
+		.skills__col:nth-child(9),
+		.skills__col:nth-child(10){
+			transition-delay: .9s;
+		}
+	}
+}
+.fp-viewing-projects{
+	#portfolio{
+		&::after{
+			transform: translateX(0);
+		}
+		.container{
+			transform: translateY(0);
+			opacity: 1;
+		}
+		.portfolio-carousel{
+			transition-delay: .6s;
+			transform: scale(1) !important;
+		}
+	}
+}
+.fp-viewing-in-touch{
+	#portfolio{
+		.container{
+			transform: translateY(0);
+			opacity: 1;
+		}
+		.portfolio-carousel{
+			transition-delay: .6s;
+			transform: scale(1) !important;
+		}
+		.portfolio-item__title{
+			&::after{
+				background: @d-gray;
+			}
+		}
+	}
+
+
+	#contact{
+		&::after{
+			transform: translateX(0);
+		}
+	}
+
+}
+
+
+.portfolio-carousel .animated {
+  -webkit-animation-duration: 6000ms !important;
+  animation-duration: 6000ms !important;
+  -webkit-animation-fill-mode: both !important;
+  animation-fill-mode: both !important; 
+}
+
+
+.myMove {
+  -webkit-animation: myMove;
+  animation: myMove;
+}
+
+@keyframes myMove {
+  0% {
+    transform: scale(1.0, 1.0);
+    transform-origin: 50% 50%;
+  }
+  100% {
+    transform: scale(1.3, 1.3);
+    transform-origin: 50% 0%;
+  }
+}
+
+@-webkit-keyframes myMove {
+  0% {
+    transform: scale(1.0, 1.0);
+    transform-origin: 50% 50%;
+  }
+  100% {
+    transform: scale(1.3, 1.3);
+    transform-origin: 50% 0%;
+  }
+}
+
+@-o-keyframes myMove {
+  0% {
+    transform: scale(1.0, 1.0);
+    transform-origin: 50% 50%;
+  }
+  100% {
+    transform: scale(1.3, 1.3);
+    transform-origin: 50% 0%;
+  }
+}
+
+@-moz-keyframes myMove {
+  0% {
+    transform: scale(1.0, 1.0);
+    transform-origin: 50% 50%;
+  }
+  100% {
+    transform: scale(1.3, 1.3);
+    transform-origin: 50% 0%;
+  }
+}
+
+@-ms-keyframes myMove {
+  0% {
+    transform: scale(1.0, 1.0);
+    transform-origin: 50% 50%;
+  }
+  100% {
+    transform: scale(1.3, 1.3);
+    transform-origin: 50% 0%;
+  }
+}

@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Marvel project | Portfolio Nomados</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:300,400,700,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		
+		
+		.scale-anm {
+		  transform: scale(1) !important;
+		}
+
+
+	
+		.team-col-inner {
+		 
+		  transform-origin: right center; 
+		}
+
+		.team-col-inner figure{
+			margin: 0;
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			backface-visibility: hidden;
+		}
+		.team-back{
+			transform: rotateY( 180deg );
+		}
+		#map {
+        height: 400px;
+        width: 100%;
+       }
+	</style>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<header>
+	<section id="slider">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-8 slider-col">
+					<div id="marvel-carousel" class="carousel slide" data-ride="carousel">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#marvel-carousel" data-slide-to="0" class="active"></li>
+					    <li data-target="#marvel-carousel" data-slide-to="1"></li>
+					    <li data-target="#marvel-carousel" data-slide-to="2"></li>
+					  </ol>
+
+						   <!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<div class="slider-inner">
+									<h1 class="slider-heading">creative</br> and professional</h1>
+									<p class="slider-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident repellat, asperiores corporis accusantium dolore, laudantium quibusdam temporibus totam obcaecati dolores.</p>
+									<a href="#" class="btn btn--empty">contact us</a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="slider-inner">
+									<h1 class="slider-heading">creative</br> and professional</h1>
+									<p class="slider-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident repellat, asperiores corporis accusantium dolore, laudantium quibusdam temporibus totam obcaecati dolores.</p>
+									<a href="#" class="btn btn--empty">contact us</a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="slider-inner">
+									<h1 class="slider-heading">creative</br> and professional</h1>
+									<p class="slider-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident repellat, asperiores corporis accusantium dolore, laudantium quibusdam temporibus totam obcaecati dolores.</p>
+									<a href="#" class="btn btn--empty">contact us</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+	</section>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".marvel-menu">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><span>MAR</span>VEL</a>
+			</div>
+	
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse marvel-menu">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#slider">Home</a></li>
+					<li><a href="#about-section">about</a></li>
+					<li><a href="#features-section">features</a></li>
+					<li><a href="#portfolio-section">portfolio</a></li>
+					<li><a href="#service-section">service</a></li>
+					<li><a href="#pricing-section">Pricing</a></li>
+					<li><a href="#contact-section">contact</a></li>
+				</ul>			
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+</header>
+
+
+	
+
+
+<main>
+	<section id="about-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-8 col-sm-push-2">
+					<div class="section-title-wrapper section-text-center">
+						<h2 class="section-title" data-sub="ABOUT">this is the one page polo</h2>
+						<p class="section-caption">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, explicabo, quaerat. Perferendis incidunt vel dolore voluptatum amet, saepe, natus. Nemo commodi deserunt sint nesciunt optio laboriosam harum animi cum veritatis delectus ipsa, nam accusantium, dolores necessitatibus laudantium neque atque, explicabo.
+								
+						</p>
+					
+						<div class="btns-wrapper">
+							<a href="" class="btn btn--black">More info</a>
+							<a href="" class="btn btn--yellow">Join Experience</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row about-row">
+				<!-- item -->
+				<div class="col-xs-12 col-md-4 about-col">
+					<div class="about-col__inner text-center">
+						<div class="about-col__heading">
+							<i class="fa fa-star-half-o" aria-hidden="true"></i>
+							<h3>Responsive Design</h3>
+						</div>
+						<div class="about-col__caption">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam nemo tenetur veritatis nulla quasi beatae?</p>
+						</div>
+
+					</div>
+				</div>
+				<!-- item -->
+				<div class="col-xs-12 col-md-4 about-col">
+					<div class="about-col__inner text-center">
+						<div class="about-col__heading">
+							<i class="fa fa-battery-quarter" aria-hidden="true"></i>
+							<h3>Awesome features</h3>
+						</div>
+						<div class="about-col__caption">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam nemo tenetur veritatis nulla quasi beatae?</p>
+						</div>
+
+					</div>
+				</div>
+				<!-- item -->
+				<div class="col-xs-12 col-md-4 about-col">
+					<div class="about-col__inner text-center">
+						<div class="about-col__heading">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+							<h3>Powerful Security</h3>
+						</div>
+						<div class="about-col__caption">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam nemo tenetur veritatis nulla quasi beatae?</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<img src="img/ipad.png" alt="ipad" class="ipad-accent">
+
+
+	</section>	
+	
+
+	<section id="numbers-section">
+		<div class="container">
+			<div class="row">
+
+				<h2 class="section-title" data-sub="">here'ae some impressive numbers about us</h2>
+				<!-- item -->
+				<div class="col-xs-6 col-md-3 numbers-col">
+					<span class="number" data-count="7555" data-aliax=" ">0</span>
+					<p>project complete</p>
+				</div>
+				<!-- item -->
+				<div class="col-xs-6 col-md-3 numbers-col">
+					<span class="number" data-count="4222" data-aliax="" >0</span>
+					<p>on going project</p>
+				</div>
+				<!-- item -->
+				<div class="col-xs-6 col-md-3 numbers-col">
+					<span class="number" data-count="6980" data-aliax="+">0</span>
+					<p>happy clients</p>
+				</div>
+				<!-- item -->
+				<div class="col-xs-6 col-md-3 numbers-col">
+					<span class="number" data-count="7555" data-aliax="%"></span>
+					<p>project complete</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section id="responsive-section">
+		<img src="img/light-lamp.png" alt="lamp" class="responsive-lamp-accent">
+		<div class="container">
+			<div class="row">
+				<div id="responsive-l-col" class="col-xs-12 col-sm-6">
+					<div class="section-title-wrapper section-text-left">
+						<h2 class="section-title" data-sub="RESPONSIVE">Boots your website</h2>
+						<p class="section-caption">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, explicabo, quaerat. Perferendis incidunt vel dolore voluptatum amet, saepe, natus.		
+						</p>
+					</div>
+
+					<ul class="list">
+						<li class="list__item"><i class="fa fa-star" aria-hidden="true"></i>responsive desig & retina ready.</li>
+						<li class="list__item"><i class="fa fa-star" aria-hidden="true"></i>buisness solution any company.</li>
+						<li class="list__item"><i class="fa fa-star" aria-hidden="true"></i>powerful admin panel.</li>
+						<li class="list__item"><i class="fa fa-star" aria-hidden="true"></i>24/7 support</li>
+					</ul>
+					<div class="btn btn--yellow btn--responsive">purchase</div>
+				</div>
+				<div id="responsive-r-col" class="col-xs-12 col-sm-6">
+					<img src="img/sprint.png" alt="" class="img-responsive">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="cta-section" class="cta cta--1">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-8 col-sm-push-2 cta-col">
+					<div class="section-title-wrapper section-text-center">
+							<h2 class="section-title section-title--cta" data-sub="">who we are</h2>
+							<p class="section-caption">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, explicabo, quaerat. Perferendis incidunt vel dolore voluptatum amet, saepe, natus.		
+							</p>
+							<div class="btns-wrapper">
+								<a href="#" class="btn btn--white">More info</a>
+								<a href="#" class="btn btn--yellow">Join Experience</a>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="features-section">
+		<div class="container">
+			<div class="row">
+				<div class="section-title-wrapper section-text-center">
+					<h2 class="section-title" data-sub="FEATURES">we're creative crafting with love</h2>
+				</div>
+			</div>
+
+
+			<div class="row features-list-row">
+
+				<!-- first row -->
+				
+				<!-- item -->
+				<div class="col-xs-12 col-sm-6 col-md-4 features-col icon1">
+					<div class="features-inner">
+						<div class="features-inner__icon">
+							<span><i class="fa fa-suitcase" aria-hidden="true"></i></span>
+						</div>
+						<div class="features-inner__text">
+							<h4>Powerful security</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium commodi temporibus expedita perferendis dolore aliquid.</p>							
+						</div>
+					</div>
+				</div>
+				<!-- item -->
+				<div class="col-xs-12 col-sm-6 col-md-4 features-col icon2">
+					<div class="features-inner">
+						<div class="features-inner__icon">
+							<span><i class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
+						</div>
+						<div class="features-inner__text">
+							<h4>Creative ideas</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium commodi temporibus expedita perferendis dolore aliquid.</p>							
+						</div>
+					</div>
+				</div>
+				<!-- item -->
+				<div class="col-xs-12 col-sm-6 col-md-4 features-col icon3">
+					<div class="features-inner">
+						<div class="features-inner__icon">
+							<span><i class="fa fa-cog" aria-hidden="true"></i></span>
+						</div>
+						<div class="features-inner__text">
+							<h4>Powerfull admin panel</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium commodi temporibus expedita perferendis dolore aliquid.</p>							
+						</div>
+					</div>
+				</div>
+
+				<!-- second row -->
+
+				<!-- item -->
+				<div class="col-xs-12 col-sm-6 col-md-4 features-col icon2">
+					<div class="features-inner">
+						<div class="features-inner__icon">
+							<span><i class="fa fa-microphone" aria-hidden="true"></i></span>
+						</div>
+						<div class="features-inner__text">
+							<h4>high resolution theme</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium commodi temporibus expedita perferendis dolore aliquid.</p>							
+						</div>
+					</div>
+				</div>
+				<!-- item -->
+				<div class="col-xs-12 col-sm-6 col-md-4 features-col icon3">
+					<div class="features-inner">
+						<div class="features-inner__icon">
+							<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+						</div>
+						<div class="features-inner__text">
+							<h4>awesome interface</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium commodi temporibus expedita perferendis dolore aliquid.</p>							
+						</div>
+					</div>
+				</div>
+				<!-- item -->
+				<div class="col-xs-12 col-sm-6 col-md-4 features-col icon1">
+					<div class="features-inner">
+						<div class="features-inner__icon">
+							<span><i class="fa fa-paper-plane" aria-hidden="true"></i></span>
+						</div>
+						<div class="features-inner__text">
+							<h4>untimade webiste builder </h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium commodi temporibus expedita perferendis dolore aliquid.</p>							
+						</div>
+					</div>
+				</div>
+
+			</div> <!-- end of features list row -->
+		</div>
+	</section>
+
+	<section id="portfolio-section">
+		<div class="portfolio-head text-center">
+			<h2 class="section-title" data-sub="WORK">Our portfolio </h2>
+			<div class="portfolio-head__filters">
+				<button class="btn btn--empty--black btn--filter portfolio-active" data-rel="all"><i class="fa fa-bars" aria-hidden="true"></i></button>
+				<button class="btn btn--empty--black btn--filter" data-rel="buisness">Buisness</button>
+				<button class="btn btn--empty--black btn--filter" data-rel="corporate">Corporate</button>
+				<button class="btn btn--empty--black btn--filter" data-rel="branding">Branding</button>
+				<button class="btn btn--empty--black btn--filter" data-rel="photo">Photography</button>
+			</div>
+		</div>
+
+		<div class="porftolio-body" id="portfolio">
+
+				<!-- row 1  -->
+
+				<!-- item -->
+				<div class="portoflio-item scale-anm buisness all">
+					<img src="img/portfolio1.png" alt="" class="">
+					<div class="portfolio-item__caption">
+						<h4>Full width slideshow<span>- Buisness</span></h4>
+						<div class="portfolio-item__icons">
+							<i class="fa fa-share-alt" aria-hidden="true"></i>
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</div>
+					</div>	
+				</div>
+				<!-- item -->
+				<div class="portoflio-item scale-anm corporate all">
+					<img src="img/portfolio2.png" alt="" class="">
+					<div class="portfolio-item__caption">
+						<h4>Lorem ipsum dolor sit.<span>- Corporate</span></h4>
+						<div class="portfolio-item__icons">
+							<i class="fa fa-share-alt" aria-hidden="true"></i>
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</div>
+					</div>	
+				</div>
+				<!-- item -->
+				<div class="portoflio-item scale-anm branding all">
+					<img src="img/portfolio3.png" alt="" class="">
+					<div class="portfolio-item__caption">
+						<h4>Awesome branting skills<span>- Branding</span></h4>
+						<div class="portfolio-item__icons">
+							<i class="fa fa-share-alt" aria-hidden="true"></i>
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</div>
+					</div>	
+				</div>
+				<!-- item -->
+				<div class="portoflio-item scale-anm photo all">
+					<img src="img/portfolio4.png" alt="" class="">
+					<div class="portfolio-item__caption">
+						<h4>Professional phots<span>- Photography</span></h4>
+						<div class="portfolio-item__icons">
+							<i class="fa fa-share-alt" aria-hidden="true"></i>
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</div>
+					</div>	
+				</div>
+
+				<!-- row 2  -->
+				
+				<!-- item -->
+				<div class="portoflio-item scale-anm buisness all">
+					<img src="img/portfolio5.jpg" alt="" class="">
+					<div class="portfolio-item__caption">
+						<h4>Full width slideshow<span>- Buisness</span></h4>
+						<div class="portfolio-item__icons">
+							<i class="fa fa-share-alt" aria-hidden="true"></i>
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</div>
+					</div>	
+				</div>
+				<!-- item -->
+				<div class="portoflio-item scale-anm corporate all">
+					<img src="img/portfolio6.jpg" alt="" class="">
+					<div class="portfolio-item__caption">
+						<h4>Lorem ipsum dolor sit.<span>- Corporate</span></h4>
+						<div class="portfolio-item__icons">
+							<i class="fa fa-share-alt" aria-hidden="true"></i>
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</div>
+					</div>	
+				</div>
+				<!-- item -->
+				<div class="portoflio-item scale-anm branding all">
+					<img src="img/portfolio7.jpg" alt="" class="">
+					<div class="portfolio-item__caption">
+						<h4>Awesome branting skills<span>- Branding</span></h4>
+						<div class="portfolio-item__icons">
+							<i class="fa fa-share-alt" aria-hidden="true"></i>
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</div>
+					</div>	
+				</div>
+				<!-- item -->
+				<div class="portoflio-item scale-anm photo all">
+					<img src="img/portfolio8.png" alt="" class="">
+					<div class="portfolio-item__caption">
+						<h4>Professional phots<span>- Photography</span></h4>
+						<div class="portfolio-item__icons">
+							<i class="fa fa-share-alt" aria-hidden="true"></i>
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</div>
+					</div>	
+				</div>
+		</div>
+	</section>
+
+	<section id="service-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-6 col-md-push-6 services-col">
+					<div class="section-title-wrapper section-text-left">
+						<h2 class="section-title" data-sub="SERVICE">Clean idea and unique design</h2>
+					</div>
+
+					<div class="services-icons-wrapper">
+						<!-- item -->
+						<div class="col-xs-12 col-sm-6 serives-icon-col">
+							<i class="fa fa-cog" aria-hidden="true"></i>
+							<h4>Excellent features</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, cumque.</p>
+						</div>
+						<!-- item -->
+						<div class="col-xs-12 col-sm-6 serives-icon-col">
+							<i class="fa fa-camera" aria-hidden="true"></i>
+							<h4>simple & clean</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, cumque.</p>
+						</div>
+						<!-- item -->
+						<div class="col-xs-12 col-sm-6 serives-icon-col">
+							<i class="fa fa-calendar-o" aria-hidden="true"></i>
+							<h4>Parallax effect</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, cumque.</p>
+						</div>
+						<!-- item -->
+						<div class="col-xs-12 col-sm-6 serives-icon-col">
+							<i class="fa fa-bell-o" aria-hidden="true"></i>
+							<h4>24/7 support</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, cumque.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- section img -->
+<!-- 		<img src="img/servie-peoples.png" alt="">
+ -->	
+	</section>
+	
+
+	<section id="pricing-section">
+		<div class="container">
+			<div class="row">
+				<div class="section-title-wrapper section-text-center">
+					<h2 class="section-title" data-sub="PRICING">Choose your plan</h2>
+				</div>
+			</div>
+
+			<div class="row pricing-tables-row">
+				<!-- item -->
+				<div class="col-xs-12 col-md-4 pricing-col">
+					<div class="pricing-col__heading" id="pricing-standard">
+						<h5>standard</h5>
+						<div class="pricing-price">
+							<span class="pricing-price__dollar">$</span>107<span class="pricing-price__month">/month</span>
+						</div>
+						<p>15 day free trial on all accounts</p>
+					</div>
+					<div class="pricing-col__body">
+						<ul class="pricing-list">
+							<li class="pricing-list__item">> 10 pages website</li>
+							<li class="pricing-list__item">> sell 1 product & accept donations</li>
+							<li class="pricing-list__item">> developer platform</li>
+							<li class="pricing-list__item">> 20 pages, galleries</li>
+							<li class="pricing-list__item">> 120 GB cloud storage</li>
+							<li class="pricing-list__item">-</li>
+							<li class="pricing-list__item">-</li>
+						</ul>
+					</div>
+					<a href="#" class="btn pricing-btn">Get Started Now</a>
+				</div>
+				<!-- item -->
+				<div class="col-xs-12 col-md-4 pricing-col">
+
+					<div id="most-popular">
+						<div class="pricing-col__heading" id="pricing-premium">
+							<div class="most-popular">Most Popular</div>
+							<h5>premium</h5>
+							<div class="pricing-price">
+								<span class="pricing-price__dollar">$</span>433<span class="pricing-price__month">/month</span>
+							</div>
+							<p>15 day free trial on all accounts</p>
+						</div>
+						<div class="pricing-col__body">
+							<ul class="pricing-list">
+								<li class="pricing-list__item">> 100 pages website</li>
+								<li class="pricing-list__item">> sell 1 product & accept donations</li>
+								<li class="pricing-list__item">> developer platform</li>
+								<li class="pricing-list__item">> 90 pages, galleries</li>
+								<li class="pricing-list__item">> 500 GB cloud storage</li>
+								<li class="pricing-list__item">> mobile website and storage</li>
+								<li class="pricing-list__item">-</li>
+							</ul>
+						</div>
+						<a href="#" class="btn pricing-btn">Get Started Now</a>
+					</div>
+
+				</div>
+				<!-- item -->
+				<div class="col-xs-12 col-md-4 pricing-col">
+					<div class="pricing-col__heading" id="pricing-ultimate">
+						<h5>ultimate</h5>
+						<div class="pricing-price">
+							<span class="pricing-price__dollar">$</span>107<span class="pricing-price__month">/month</span>
+						</div>
+						<p>15 day free trial on all accounts</p>
+					</div>
+					<div class="pricing-col__body">
+						<ul class="pricing-list">
+							<li class="pricing-list__item">> 10 pages website</li>
+							<li class="pricing-list__item">> sell 1 product & accept donations</li>
+							<li class="pricing-list__item">> developer platform</li>
+							<li class="pricing-list__item">> 20 pages, galleries</li>
+							<li class="pricing-list__item">> 120 GB cloud storage</li>
+							<li class="pricing-list__item">> mobile website and storage</li>
+							<li class="pricing-list__item">> 24/7 Support</li>
+						</ul>
+					</div>
+					<a href="#" class="btn pricing-btn">Get Started Now</a>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+
+	<section id="team-section">
+		<div class="container">
+			<div class="row">
+				<div class="section-title-wrapper section-text-center">
+					<h2 class="section-title" data-sub="EXPERT">meet our team</h2>
+				</div>
+			</div>
+
+
+			<div class="row team-row">
+				<!-- item -->
+				<div class="col-xs-12 col-md-4 team-col">
+					<div class="team-col-inner" id="person1">
+						<figure class="team-front">
+							<div class="person-pic" >
+								<img src="img/base.jpg" alt=""">
+							</div>
+							<div class="person-short-caption">
+								<h4>Robert willsom</h4>
+								<h6>web developer</h6>
+							</div>
+						</figure>
+						<figure class="team-back">
+							<div class="person-caption">
+								<h3>Robert willsom</h3>
+								<h5>web developer</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci molestias ipsam nam quibusdam commodi laborum sint cum? Laboriosam, perspiciatis autem!</p>
+							</div>
+							<div class="person-social">
+								<ul class="social-list">
+									<li class="social-list__item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li class="social-list__item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+									<li class="social-list__item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li class="social-list__item"><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+									<li class="social-list__item"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+									<li class="social-list__item"><a href="#"><i class="fa fa-apple" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+						</figure>
+					</div>
+				</div>
+				<!-- item -->
+				<div class="col-xs-12 col-md-4 team-col" id="person2">
+					<div class="team-col-inner">
+						<figure class="team-front">
+							<div class="person-pic">
+								<img src="img/base-1.jpg" alt="">
+							</div>
+							<div class="person-short-caption">
+								<h4>Robert willsom</h4>
+								<h6>web developer</h6>
+							</div>
+						</figure>
+						<figure class="team-back">
+							<div class="person-caption">
+								<h3>Robert willsom</h3>
+								<h5>web developer</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci molestias ipsam nam quibusdam commodi laborum sint cum? Laboriosam, perspiciatis autem!</p>
+							</div>
+							<div class="person-social">
+								<ul class="social-list">
+									<li class="social-list__item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li class="social-list__item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+									<li class="social-list__item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li class="social-list__item"><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+									<li class="social-list__item"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+									<li class="social-list__item"><a href="#"><i class="fa fa-apple" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+						</figure>
+					</div>
+				</div>
+				<!-- item -->
+				<div class="col-xs-12 col-md-4 team-col" id="person3">
+					<div class="team-col-inner">
+						<figure class="team-front">
+							<div class="person-pic">
+								<img src="img/base-2.jpg" alt="">
+							</div>
+							<div class="person-short-caption">
+								<h4>Robert willsom</h4>
+								<h6>web developer</h6>
+							</div>
+						</figure>
+						<figure class="team-back">
+							<div class="person-caption">
+								<h3>Robert willsom</h3>
+								<h5>web developer</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci molestias ipsam nam quibusdam commodi laborum sint cum? Laboriosam, perspiciatis autem!</p>
+							</div>
+							<div class="person-social">
+								<ul class="social-list">
+									<li class="social-list__item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li class="social-list__item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+									<li class="social-list__item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li class="social-list__item"><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+									<li class="social-list__item"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+									<li class="social-list__item"><a href="#"><i class="fa fa-apple" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="cta2-section" class="cta cta--2">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-8 col-sm-push-2 cta-col">
+					<div class="section-title-wrapper section-text-center">
+							<h2 class="section-title section-title--cta" data-sub="">are you impressed by our work?</h2>
+							<p class="section-caption">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							</p>
+							<div class="btns-wrapper">
+								<a href="#" class="btn btn--yellow">purchase now</a>
+								<a href="#" class="btn btn--white">get in touch</a>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="news-section">
+		
+		<div class="container">
+			<h2 class="section-title section-text-center" data-sub="NEWS">recent blog post</h2>
+
+			<div class="row news-row">
+				<!-- item -->
+				<div class="col-xs-12 col-sm-6 col-md-3 news-col" id="news1">
+					<div class="news-inner">
+						<div class="news-thumbnail">
+							
+						</div>
+						<div class="news-caption">
+							<div class="news-date">
+								<span>23 july 2016</span>
+							</div>
+							<h3>Single post 1</h3>
+							<div class="news-meta">by Felipe . <a href="#">in logo</a> . 1 comment</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur vel tempora, qui neque reprehenderit dolorem a! Ex mollitia voluptatibus perspiciatis!</p>
+							<a href="#" class="btn-news">read more</a>
+						</div>
+					</div>
+				</div>
+				<!-- item -->
+				<div class="col-xs-12 col-sm-6 col-md-3 news-col" id="news2">
+					<div class="news-inner">
+						<div class="news-thumbnail">
+						
+						</div>
+						<div class="news-caption">
+							<div class="news-date">
+								<span>13 october 2016</span>
+							</div>
+							<h3>Single post 2</h3>
+							<div class="news-meta">by Felipe . <a href="#">in logo</a> . 1 comment</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur vel tempora, qui neque reprehenderit dolorem a! Ex mollitia voluptatibus perspiciatis!</p>
+							<a href="#" class="btn-news">read more</a>
+						</div>
+					</div>
+				</div>
+				<!-- item -->
+				<div class="col-xs-12 col-sm-6 col-md-3 news-col" id="news3">
+					<div class="news-inner">
+						<div class="news-thumbnail">
+						
+						</div>
+						<div class="news-caption">
+							<div class="news-date">
+								<span>16 october 2016</span>
+							</div>
+							<h3>Single post 3</h3>
+							<div class="news-meta">by Felipe . <a href="#">in logo</a> . 1 comment</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur vel tempora, qui neque reprehenderit dolorem a! Ex mollitia voluptatibus perspiciatis!</p>
+							<a href="#" class="btn-news">read more</a>
+						</div>
+					</div>
+				</div>
+				<!-- item -->
+				<div class="col-xs-12 col-sm-6 col-md-3 news-col" id="news4">
+					<div class="news-inner">
+						<div class="news-thumbnail">
+						
+						</div>
+						<div class="news-caption">
+							<div class="news-date">
+								<span>3 may 2016</span>
+							</div>
+							<h3>Single post 41</h3>
+							<div class="news-meta">by Felipe . <a href="#">in logo</a> . 1 comment</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur vel tempora, qui neque reprehenderit dolorem a! Ex mollitia voluptatibus perspiciatis!</p>
+							<a href="#" class="btn-news">read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+
+	<section id="contact-section">
+		<div class="container">
+			<h2 class="section-title" data-sub="contact">send us message</h2>
+
+			
+			<div class="row">
+				<form action="" id="contact-form">
+					 <div class="contact-inputs">
+					 	<input type="text" class="form-control form-inline-b" id="firstname" placeholder="First Name (Required)" required="true">
+					 	<input type="text" class="form-control form-inline-b" id="lasttname" placeholder="Last Name (Required)" required="true">
+					 	<input type="email" class="form-control form-inline-b" id="email" placeholder="Email (Required)" required="true">
+					 	<input type="text" class="form-control form-inline-b" id="subject" placeholder="Subject">
+					 </div>
+
+					 <textarea name="msg" id="message" class="form-control" rows="10" placeholder="Type your message"></textarea>
+					 <input type="submit" value="SEND" class="btn btn--yellow">
+				</form>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="map-section">
+		<div class="map-head">
+			<h2 class="text-center">Locate us on map <i class="fa fa-caret-down" aria-hidden="true"></i></h2>
+		</div>
+		<div class="map-body">
+			<div id="map"></div>
+		</div>
+	
+	</section>
+</main> <!-- END OF MAIN -->
+
+
+<footer>
+	<div id="footer-top">
+		<div class="container">
+			<div class="row footer-row">
+				<!-- item -->
+				<div class="col-xs-12 col-md-4 footer-col">
+					<span class="footer-icon"><i class="fa fa-mobile" aria-hidden="true"></i></span>
+					<p>Phone: (999)000-122-233</p>
+				</div>
+				<!-- item -->
+				<div class="col-xs-12 col-md-4 footer-col">
+					<ul class="social-list footer-social-list">
+						<li class="social-list__item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li class="social-list__item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li class="social-list__item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="social-list__item"><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+						<li class="social-list__item"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+						<li class="social-list__item"><a href="#"><i class="fa fa-apple" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<!-- item -->
+				<div class="col-xs-12 col-md-4 footer-col">
+					<span class="footer-icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+					<p>123 state, South America, 205</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<p class="text-center">All Rights Reserved Nomados 2017</p>
+	</div>
+</footer>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>	
+<script src="main.js"></script>
+
+ <script>
+	function initMap() {
+        var pos = {lat: 53.137, lng: 23.165};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 13,
+          center: pos
+        });
+        var marker = new google.maps.Marker({
+          position: pos,
+          map: map
+        });
+     }
+    </script>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRCG_ecI5Jtgg5STuxojNOneXURA5Fi_I&callback=initMap">
+    </script>
+
+
+</body>
+</html>

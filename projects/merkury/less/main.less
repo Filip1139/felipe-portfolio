@@ -1,0 +1,600 @@
+body{
+	overflow-x: hidden;
+}
+
+// HAMBURGER MOBILE 
+.navbar-toggle{
+	border: 1px solid @accent-blue;
+	span{
+		background: @accent-blue;
+	}
+}
+.navbar-nav{
+	margin: 0;
+}
+.navbar-collapse{
+	padding: 0 !important;
+	@media @medium{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+nav{
+	.basic-transition;
+	height: 60px;
+	.nav{
+		width: 100%;
+		background: #fff;
+		border-bottom: 1px solid @l-gray;
+		li{
+				line-height: 60px;
+				text-align: center;
+			a{
+				// padding: 0 15px;
+				font-weight: 400;
+				font-size: 14px;
+				letter-spacing: 1px;
+				border-bottom: 3px solid transparent;
+				display: inline-block;
+				transition: all .6s;
+				color: @blue;
+				&:hover{
+					background: transparent !important;
+					border-bottom: 3px solid @accent-blue;
+				}
+			}
+			.btn{
+				margin-left: 12px;
+			}
+		}
+	}
+	@media @medium{
+		.nav{
+			width: auto;
+			background: transparent;
+			border-bottom: none;
+			float: right !important;
+			li{
+				a{
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+.nav-fixed{
+	background: #fff;
+	height: 52px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	.nav{
+
+		li{
+			line-height: 50px;
+			a{
+				color: @blue;
+			}
+		}
+	}	
+	.navbar-brand{
+		color: @blue;
+	}
+}
+
+.home-scene{
+		padding: 0 0 50px;
+	position: relative;
+	background: @blue;
+	background-image: url(../img/hero-grid.png)no-repeat,
+					  url(../img/wykres.png)repeat-x center 100px;
+	background-size: cover, contain;
+
+	img{
+		position: absolute;
+		left: 50%;
+		bottom: -20vh;
+		transform: translateX(-50%);
+		box-shadow: 0;
+		transform-origin: left;
+	}
+	@media @medium{
+		min-height: 100vh;
+
+	}
+}
+
+.home-text{
+	margin-top: 150px;
+	h1,h3{
+		margin-bottom: 8px;
+		color: @white;
+	}
+	h1{
+		font-size: 26px;
+	}
+	h3{
+		color: @l-gray;
+		font-size: 20px;
+	}
+	a{
+		margin-top: 70px;
+	}
+	@media @small{
+		h1{
+			font-size: 38px;
+		}
+		h3{
+			font-size: 24px;
+		}
+	}
+	@media @medium{
+		margin-top: 250px;
+		h1{
+			font-size: 47px;
+		}
+	}
+
+}
+.home-screen__img{
+	display: none;
+	@media @medium{
+		display: block;
+	}
+}
+#features{
+	padding: 100px 0;
+	@media @medium{
+		padding: 300px 0 100px;
+	}
+
+}
+
+.features__col{
+	margin: 32px 0;
+	position: relative;
+	&--lines{
+		margin: 120px 0;
+		&:after,
+		&:before{
+			content:'';
+			position: absolute;
+			width:1px;
+			height: 40%;
+			background: @lines-gray;
+			left: 50%;
+			top: -50%;
+		}
+		&:after{
+			top:auto;
+			bottom: -50%;
+		}
+	}
+	h3{
+		font-size: 20px;
+		font-weight: 700;
+		margin: 16px 0;
+	}
+	i{
+		color: @accent-blue;
+		font-size: 50px;
+	}
+	.btn{
+		margin-top: 16px;
+	}
+	@media @medium{
+		&--lines{
+			margin: 32px 0;
+			&:after,
+			&:before{
+				width:40%;
+				height: 1px;
+				background: @lines-gray;
+				left: -25%;
+				top: 15%;
+			}
+			&:after{
+				left: auto;
+				right: -25%;
+			}
+		}
+	}
+}
+
+// you need section
+
+#y-need{
+	position: relative;
+	min-height: 600px;
+
+}
+.y-need__left-col{
+	position: relative;
+	h2{
+		margin-bottom: 24px;
+	}
+	.list{
+		margin-top: 24px;
+		li{
+			color: @accent-blue;
+			font-size: 16px;
+		}
+	}
+}
+
+
+.y-need__right-col{
+	@media @medium{
+		position: absolute;
+		right: 0;
+		bottom: auto;
+	}
+}
+.y-need__img{
+	position: relative;
+	right: -15px;
+	top: 50px;
+	@media @medium{
+		top: auto;
+		right: auto;
+	}
+}
+// drag and drop section
+
+#drag-drop{
+	padding: 50px 0;
+	background: @blue;
+	background-image: url(../img/hero-grid.png)no-repeat,
+					  url(../img/wykres.png)repeat-x center 100px;
+
+	@media @medium{
+		padding: 150px 0;
+	}
+}
+
+
+.drag-drop__left-col{
+	h3{
+		color: #fff;
+		span{
+			color: @l-gray;
+		}
+	}
+}
+
+.drag-drop__list{
+	margin: 32px 0;
+	.drag-drop__list--item{
+		margin-top: 8px;
+		padding: 16px 8px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: #fff;
+		i{
+			font-size: 20px;
+		}
+	}
+	@media @medium{
+		margin-top: 32px;
+		.drag-drop__list--item{
+
+		}
+	}
+}
+.drag-drop__thumb{
+	flex-basis: 60px;
+	span{
+		width: 40px;
+		height: 40px;
+		display: block;
+		color: #fff;
+		background: @accent-blue;
+		line-height: 40px;
+		border-radius: 50%;
+		text-align: center;
+		font-weight: 700;
+	}
+}
+.drag-drop__list-caption{
+	flex-basis: 80%;
+	font-size: 12px;
+	h4{
+		margin-bottom: 4px;
+		font-weight: 700;
+		font-size: 13px;	
+	}
+	i{
+		font-size: 14px !important;
+	}
+	.complited{
+		color: @complited;
+	}
+}
+
+.drop-it{
+	position: relative;
+}
+.drop-it-item{
+	position: absolute;
+	right: -15px;
+	bottom: -25px;
+	width: 50px;
+	height: 50px;
+	background: rgba(132,146,175,0.8);
+	border-radius: 50%;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	z-index: 1;
+	i{
+		z-index: 11;
+	}
+	&:before{
+		content: "";
+		position: absolute;
+		left: -7.5px;
+		top: -7.5px;
+		width: 65px;
+		height: 65px;
+		border-radius: 50%;
+		background: rgba(132,146,175,0.5);
+		z-index: -1;
+	}
+
+
+
+}
+.drag-drop__list-caption--drop-here{
+	margin-top: 8px;
+	padding: 15px 0;	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-basis: 100%;
+	border: 2px dotted @l-gray;
+	h3{
+		color: @l-gray;
+		font-size: 20px;
+	}
+}
+
+
+.drag-drop__carousel--item{
+	h3{
+		margin-bottom: 24px;
+		font-size: 32px;
+		color: #fff;
+		font-weight: 100;
+	}
+
+}
+.owl-prev,
+.owl-next{
+	width: 25px;
+	height: 25px;
+	margin: 10px 2px;
+	display: inline-block;
+	border-radius: 50%;
+	border: 2px solid @l-gray;
+	color: @l-gray;
+	text-align: center;
+	line-height: 25px;
+	font-size: 12px;
+	.basic-transition;
+	&:hover{
+		background: #fff;
+		color: @accent-blue;
+	}
+}
+
+
+// pricing
+
+
+#pricing{
+	padding: 100px 0;
+	.section-title{
+		margin-bottom: 100px;
+	}
+}
+.pricing__mockup-text{
+	position: relative;
+	h4{
+		font-size: 18px;
+		font-weight: 700;
+	}
+}
+
+// MOCKUP
+
+.mockup{
+	.mockup-img{
+		max-width: 100%;
+	}
+	@media @large{
+		// position: relative;
+		display: flex;
+		min-height: 600px;
+		.mockup-img{
+			max-width: inherit;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
+.pricing__mockup-text{
+	position: relative;
+	z-index: 1;
+
+	h4{
+		display: inline-block;
+		padding-bottom: 24px;
+		font-size: 20px;
+		border-bottom: 2px solid @accent-blue;
+	}
+	p{
+		margin-top: 24px;
+	}
+
+	@media @medium{
+		h4{
+			border: none;
+			padding-bottom: 0;
+			font-size: 24px;
+		}
+		p{
+			margin-top: 48px;
+			line-height: 24px;
+		}
+	}
+}
+.mockup-flex-end{
+	align-self: flex-end;
+}
+.pricing__line{
+	margin: 24px 0 0;
+	display: none;
+    position: absolute;
+    width: 150%;
+    height: 2px;
+    left: 0;
+    background: @accent-blue;
+    &:after{
+    	content: "";
+    	position: absolute;
+    	top: -17.5px;
+    	right: -17.5px;
+    	width: 35px;
+    	height: 35px;
+    	border-radius: 50%;
+    	background: @accent-blue;
+    	border: 5px solid lighten(@accent-blue, 20%);
+    }
+    &--right-side{
+    	left: auto;
+    	right: 0;
+    	&:after{
+    		right: auto;
+    		left: -17.5px;
+    	}
+    }
+	@media @medium{
+		display: block;
+		&:after{
+			display: block;
+		}
+	}
+    @media @large{
+   		width: 250%;
+    }
+
+}
+
+
+
+
+
+
+
+.pricing__row{
+	padding: 100px 0 0;
+
+}
+.pricing__title{
+	h2{
+		font-size: 38px;
+		margin-bottom: 24px;
+	}
+}
+.pricing__offert-col{
+	position: relative;
+	max-width: 300px;
+	margin: 24px auto;
+	padding: 32px;
+	background: #fff;
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	transition: all .3s;
+	transform: translateY(0);
+	h4{
+		text-align: center;
+		font-size: 20px;
+		text-transform: uppercase;
+	}
+	li{
+		margin: 8px 0;
+	}
+	&:hover{
+		box-shadow: 0 0 15px rgba(0,0,0,0.3);
+		transform: translateY(-10px);
+
+	}
+	@media @medium{
+		margin: 100px 0 40px;
+	}
+
+	&:before,
+	&:after{
+
+	}
+}
+
+.pricing__price{
+	margin: 16px 0 24px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 52px;
+	span{
+		font-size: 34px;
+	}
+}
+span.pricing__per-month{
+	font-size: 18px;
+	font-weight: 400;
+	color: @l-gray;
+}
+
+.pricing__under-text{
+	margin: 30px 0;
+}
+.pricing-btn{
+	margin-top: 50px;
+
+}
+
+// FOOTER
+
+
+footer{
+	background: #0e1a35;
+	clear: both;
+
+}
+.footer{
+	display: block;
+	margin: 0 auto;
+	@media @medium{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+		
+	}
+}
+.footer__left{
+	flex:50%;
+}
+.footer__left,
+.footer__right{
+	float: none !important;
+	text-align: center;
+	p{
+		margin: 0;
+
+	}
+    height: 50px;
+    line-height: 50px;
+    @media @medium{
+    	float: right;
+    	text-align: left;
+    }
+}

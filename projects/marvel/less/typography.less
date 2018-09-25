@@ -1,0 +1,148 @@
+i/* ########################
+
+		TYPOGRAPHY
+
+###########################*/
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Montserrat', sans-serif;
+}
+p,a,li,span{
+	font-family: 'Lato', sans-serif;	
+}
+
+.section-text-center{
+	text-align: center;
+}
+.section-text-left{
+	text-align: left;
+	.section-title{
+		&:before{
+			left: 0;
+			transform: translateX(0);
+
+		}
+	}
+}
+
+.section-title-wrapper{
+	margin-top: 100px;
+	@media @medium{
+	margin-top: 150px;
+
+	}
+}
+
+
+.section-title{
+	font-size: 22px;
+	padding: 0 8px;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 1;
+	font-weight: 900;
+	color: @d-gray;
+	&:before{
+		content:attr(data-sub);
+		position: absolute;
+		left: 50%;
+		bottom: 90%;
+		transform: translateX(-50%);
+		font-size: 45px;
+		font-weight : 900;
+		color: @sub-gray;
+		z-index: -1;
+		line-height: 1
+	}
+	@media @small{
+		font-size: 24px;
+		&:before{
+			bottom: 0;
+			font-size: 66px;
+		}
+	}
+	@media @medium{
+		font-size: 28px;
+		&:before{
+			font-size: 91px;
+		}
+	}
+}
+.section-caption{
+	margin: 24px 0;
+}
+
+.btn{
+	position: relative;
+	
+	padding: 10px 50px;
+	border-radius: 0;
+	border-width: 1px;
+	border-style: solid;
+	font-size: 13px;
+	transition: all .2s ease-in-out;
+	font-weight: 700;
+	z-index: 0;
+	text-transform: uppercase;
+	&:hover{
+		border-color: @black;
+		color: @black;
+		background: transparent;
+	}
+	&:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 0;
+		background: @black;
+		z-index: -1;
+		transition: all .3s ease-in-out;
+	}
+	&--empty{
+		border-color: @black;
+		color: @black;
+		background: transparent;
+		&:hover{
+			color: #fff;
+			&:after{
+				height: 100%;
+			}
+		}
+	}
+	&--white{
+		border: 1px solid #fff;
+		color: #fff;
+		&:hover{
+			background: #fff;
+			color: @black;
+		}
+	}
+	&--black{
+		background:@black;
+		color: @ylw-accent;
+	}
+	&--yellow{
+		background: @ylw-accent;
+		color: @black; 
+		&:hover{
+			// color: @ylw-accent;
+			background: transparent;
+
+		}
+	}
+
+}
+.btns-wrapper{
+		margin-top: 50px;
+	.btn{
+		margin: 8px;
+		display: block;
+	}
+	@media @x-small{
+		.btn{
+			display: inline-block;	
+		}
+	}
+}
